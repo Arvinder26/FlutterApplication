@@ -8,12 +8,24 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+
+
+
   flutter:
     sdk: flutter
+
+  csv: ^5.0.0
+
+  path_provider: ^2.0.0
+  sqflite: ^2.2.8+4
+  path: ^1.8.4
+
 
   # Your other packages:
   thingsboard_client: ^4.0.0
   fl_chart: ^0.60.0
+
+  shared_preferences: ^2.0.15
 
   intl: ^0.17.0
   http: ^0.13.6
@@ -23,6 +35,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -34,6 +47,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/data/daily_avg_6m.csv
+    - assets/logo.png
+    - assets/models/lstm_model.tflite
 
   # To add assets to your application, add an assets section, like this:
   # assets:
